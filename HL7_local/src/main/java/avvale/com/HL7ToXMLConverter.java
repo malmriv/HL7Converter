@@ -19,7 +19,7 @@ import java.io.FileWriter;
 public class HL7ToXMLConverter {
 
     public static void main(String[] args) {
-        String hl7Message = readHL7MessageFromFile("C:\\Users\\manuel.almagro\\Desktop\\Proyectos\\Clínic BCN\\ArchivosTest\\Input\\RDS_input.txt");
+        String hl7Message = readHL7MessageFromFile("C:\\Users\\manuel.almagro\\Desktop\\Proyectos\\Clínic BCN\\ArchivosTest\\Input\\RDE_EDI_input.txt");
 
         if (hl7Message != null) {
 
@@ -41,7 +41,7 @@ public class HL7ToXMLConverter {
             String xmlMessage = xmlParser.encode(message);
 
             // Escribir el mensaje XML en un archivo
-            writeXMLMessageToFile(xmlMessage, "C:\\Users\\manuel.almagro\\Desktop\\Proyectos\\Clínic BCN\\ArchivosTest\\Output\\RDS_output2.txt");
+            writeXMLMessageToFile(xmlMessage, "C:\\Users\\manuel.almagro\\Desktop\\Proyectos\\Clínic BCN\\ArchivosTest\\Output\\RDE_EDI_output.txt");
 
             // Imprimir el mensaje en formato XML
             //System.out.println("Mensaje XML:\n" + xmlMessage);

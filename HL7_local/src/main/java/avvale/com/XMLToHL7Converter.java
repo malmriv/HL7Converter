@@ -19,7 +19,7 @@ import java.io.FileWriter;
 public class XMLToHL7Converter {
 
     public static void main(String[] args) {
-        String xmlMessage = readXMLMessageFromFile("C:\\Users\\manuel.almagro\\Desktop\\Proyectos\\Clínic BCN\\ArchivosTest\\Input\\RDS_XML_Input.xml");
+        String xmlMessage = readXMLMessageFromFile("C:\\Users\\manuel.almagro\\Desktop\\Proyectos\\Clínic BCN\\ArchivosTest\\Input\\RDE_XML_Input.xml");
 
         if (xmlMessage != null) {
             try (HapiContext context = new DefaultHapiContext()) {
