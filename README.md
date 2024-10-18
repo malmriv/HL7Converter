@@ -18,18 +18,18 @@ Este proyecto contiene un conversor de mensajes HL7 (Health Level 7) que permite
 ## Ejemplo
 ### Mensaje HL7 en formato EDI
 
-```
+```txt
 MSH|^~\&|HOSPITAL|GASTROENTEROLOGY|PHARMACY|GH|202410180900||ORM^O01|789123|P|2.6
 PID|1||PACIENTE_123^^^GH||ALMAGRO^MANUEL^A||19950728|M|||C/ Falsa 123^^Villabroma^Granada^11111^España||(666)333-222|||M|||123456789|987654321
-PV1|1|O|2000^2012^01||||DOCTOR_321^GARCIA^JULIAN^M|||MED||||||||OUTPATIENT|A0|
-ORC|NW|RX12345^HOSPITAL|RX54321^PHARMACY|PA|1|CM||||202410180900|DOCTOR_321^GARCIA^JULIAN^M|||NO||||||||||NO REFILLS
+PV1|1|O|2000^2012^01||||DOCTOR_321^TOMIA^ANA^H|||MED||||||||OUTPATIENT|A0|
+ORC|NW|RX12345^HOSPITAL|RX54321^PHARMACY|PA|1|CM||||202410180900|DOCTOR_321^TOMIA^ANA^H|||NO||||||||||NO REFILLS
 RXO|001^LACTASE||60000U|TAB|||PO||||||||202410180900|30D|||||||||||||||||||
 RXR|PO^Oral
 OBX|1|TX|COMMENT^Doctor's Comments||The patient suffers from lactose intolerance. Follow-up in 3 months.
 
 ```
 ### Mensaje HL7 en formato XML
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?><ORM_O01 xmlns="urn:hl7-org:v2xml">
     <MSH>
         <MSH.1>|</MSH.1>
@@ -113,10 +113,10 @@ OBX|1|TX|COMMENT^Doctor's Comments||The patient suffers from lactose intolerance
                 <PV1.7>
                     <XCN.1>DOCTOR_321</XCN.1>
                     <XCN.2>
-                        <FN.1>GARCIA</FN.1>
+                        <FN.1>TOMIA</FN.1>
                     </XCN.2>
-                    <XCN.3>JULIAN</XCN.3>
-                    <XCN.4>M</XCN.4>
+                    <XCN.3>ANA</XCN.3>
+                    <XCN.4>H</XCN.4>
                 </PV1.7>
                 <PV1.10>MED</PV1.10>
                 <PV1.18>OUTPATIENT</PV1.18>
@@ -148,10 +148,10 @@ OBX|1|TX|COMMENT^Doctor's Comments||The patient suffers from lactose intolerance
             <ORC.11>
                 <XCN.1>DOCTOR_321</XCN.1>
                 <XCN.2>
-                    <FN.1>GARCIA</FN.1>
+                    <FN.1>TOMÍA</FN.1>
                 </XCN.2>
-                <XCN.3>JULIAN</XCN.3>
-                <XCN.4>M</XCN.4>
+                <XCN.3>ANA</XCN.3>
+                <XCN.4>H.</XCN.4>
             </ORC.11>
             <ORC.14>
                 <XTN.1>NO</XTN.1>
