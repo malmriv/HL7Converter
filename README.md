@@ -111,7 +111,7 @@ OBX|1|TX|COMMENT^Doctor's Comments||The patient suffers from lactose intolerance
                     <PL.3>01</PL.3>
                 </PV1.3>
                 <PV1.7>
-                    <XCN.1>DOCTOR_321</XCN.1>
+                    <XCN.1>DOCTORA_321</XCN.1>
                     <XCN.2>
                         <FN.1>TOMIA</FN.1>
                     </XCN.2>
@@ -146,12 +146,12 @@ OBX|1|TX|COMMENT^Doctor's Comments||The patient suffers from lactose intolerance
                 <XCN.1>202410180900</XCN.1>
             </ORC.10>
             <ORC.11>
-                <XCN.1>DOCTOR_321</XCN.1>
+                <XCN.1>DOCTORA_321</XCN.1>
                 <XCN.2>
-                    <FN.1>TOMÍA</FN.1>
+                    <FN.1>TOMIA</FN.1>
                 </XCN.2>
                 <XCN.3>ANA</XCN.3>
-                <XCN.4>H.</XCN.4>
+                <XCN.4>H</XCN.4>
             </ORC.11>
             <ORC.14>
                 <XTN.1>NO</XTN.1>
@@ -200,7 +200,5 @@ OBX|1|TX|COMMENT^Doctor's Comments||The patient suffers from lactose intolerance
         </ORM_O01.ORDER_DETAIL>
     </ORM_O01.ORDER>
 </ORM_O01>
-
-
 ```
 
