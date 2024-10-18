@@ -17,18 +17,19 @@ Este proyecto contiene un conversor de mensajes HL7 (Health Level 7) que permite
 
 ## Ejemplo
 ### Mensaje HL7 en formato EDI
-
+El siguiente archivo puede ser convertido a XML usando la clase HL7ToXMLConverter:
 ```txt
 MSH|^~\&|HOSPITAL|GASTROENTEROLOGY|PHARMACY|GH|202410180900||ORM^O01|789123|P|2.6
 PID|1||PACIENTE_123^^^GH||ALMAGRO^MANUEL^A||19950728|M|||C/ Falsa 123^^Villabroma^Granada^11111^España||(666)333-222|||M|||123456789|987654321
 PV1|1|O|2000^2012^01||||DOCTOR_321^TOMIA^ANA^H|||MED||||||||OUTPATIENT|A0|
 ORC|NW|RX12345^HOSPITAL|RX54321^PHARMACY|PA|1|CM||||202410180900|DOCTOR_321^TOMIA^ANA^H|||NO||||||||||NO REFILLS
-RXO|001^LACTASE||60000U|TAB|||PO||||||||202410180900|30D|||||||||||||||||||
+RXO|001^LACTASE||60000|TAB|||PO||||||||202410180900|30D|||||||||||||||||||
 RXR|PO^Oral
 OBX|1|TX|COMMENT^Doctor's Comments||The patient suffers from lactose intolerance. Follow-up in 3 months.
 
 ```
 ### Mensaje HL7 en formato XML
+El siguiente archivo puede ser convertido a EDI usando la clase XMLToHL7Converter:
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><ORM_O01 xmlns="urn:hl7-org:v2xml">
     <MSH>
@@ -168,7 +169,7 @@ OBX|1|TX|COMMENT^Doctor's Comments||The patient suffers from lactose intolerance
                     <CE.1>001</CE.1>
                     <CE.2>LACTASE</CE.2>
                 </RXO.1>
-                <RXO.3>60000U</RXO.3>
+                <RXO.3>60000</RXO.3>
                 <RXO.4>
                     <CE.1>TAB</CE.1>
                 </RXO.4>
