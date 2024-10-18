@@ -12,7 +12,7 @@ Este proyecto contiene un conversor de mensajes HL7 (Health Level 7) que permite
 
 ## Uso
 1. Clona este repositorio.
-2. Usa compila los archivos .java, indicando qué archivo local deben convertir.
+2. Usa compila los archivos .java, indicando qué archivo local deben leer y dónde deben depositar el output.
 3. Personaliza los segmentos Z según sea necesario. Basta añadir una nueva clase por cada segmento custom y referenciarla en la clase `CustomModelClassFactory`.
 
 ## Ejemplo
