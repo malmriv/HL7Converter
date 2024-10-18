@@ -19,7 +19,7 @@ import java.io.FileWriter;
 public class XMLToHL7Converter {
 
     public static void main(String[] args) {
-        String xmlMessage = readXMLMessageFromFile("C:\\Users\\manuel.almagro\\Desktop\\Proyectos\\Clínic BCN\\ArchivosTest\\Input\\RDE_XML_Input.xml");
+        String xmlMessage = readXMLMessageFromFile("{archivo a leer}");
 
         if (xmlMessage != null) {
             try (HapiContext context = new DefaultHapiContext()) {
@@ -40,7 +40,7 @@ public class XMLToHL7Converter {
                 String hl7Message = pipeParser.encode(message);
 
                 // Escribir el mensaje HL7 en un archivo
-                writeHL7MessageToFile(hl7Message, "C:\\Users\\manuel.almagro\\Desktop\\Proyectos\\Clínic BCN\\ArchivosTest\\Output\\RDS_EDI_output.txt");
+                writeHL7MessageToFile(hl7Message, "{archivo a escribir}");
 
                 // Imprimir el mensaje HL7 en formato pipe
                 System.out.println("Mensaje HL7 generado:\r" + hl7Message);
