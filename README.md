@@ -1,5 +1,5 @@
 # Conversor HL7: XML &harr; EDI
-Este repositorio contiene un conversor de mensajes HL7 (Health Level 7) que permite convertir entre XML y EDI. Es compatible con segmentos Z (customizados por el usuario), ya que uso un `CustomModelClassFactory` en el cual se pueden añadir clases Z definidas por el usuario.
+Este repositorio contiene un conversor de mensajes HL7 (Health Level 7) que permite convertir entre XML y EDI. Es compatible con segmentos Z (customizados por el usuario) mediante el uso un `CustomModelClassFactory` en el cual se pueden añadir clases Z definidas por el usuario.
 
 ## Funcionalidades
 - Conversión de mensajes HL7 de EDI a XML y de XML a EDI.
